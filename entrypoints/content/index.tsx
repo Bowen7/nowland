@@ -2,7 +2,7 @@ import "@/assets/global.css";
 import ReactDOM from "react-dom/client";
 import "./style.css";
 
-import App from "./App.tsx";
+import { App } from "./App.tsx";
 
 export default defineContentScript({
   matches: ["*://*/*"],
