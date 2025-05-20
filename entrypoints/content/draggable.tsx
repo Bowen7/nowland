@@ -27,9 +27,10 @@ export const Draggable = (props: { children: React.ReactNode }) => {
         width: 230,
         height: 56,
       }}
-      className="fixed z-2147483647"
+      className="!fixed z-2147483647"
       onDragStart={setDocumentPointerCapture}
       onDragEnd={releaseDocumentPointerCapture}
+      enableResizing={false}
     >
       {props.children}
     </Rnd>
